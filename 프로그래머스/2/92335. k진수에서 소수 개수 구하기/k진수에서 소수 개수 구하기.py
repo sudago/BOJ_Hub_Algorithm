@@ -7,7 +7,7 @@ def change_to_k_base(n, k):
         rev_base += str(mod)
     return rev_base[::-1]
     
-def isDecimal(num):
+def isPrime(num):
     if num <= 1:
         return False
     for i in range(3, math.floor(math.sqrt(num))+1): # 제곱근은 소수 -> 정수로 올림 -> 테스트 케이스 14, 16번 실패로 동등비교(+1) 추가
@@ -17,12 +17,11 @@ def isDecimal(num):
     
 def solution(n, k):
     answer = 0
-    k_base = str(change_to_k_base(int(n), int(k))) # n을 k 진수로 변환 -> '0'으로 자르기 위해 string으로 변환
-    nums = filter(lambda x : x != '', k_base.split('0')) # 빈 문자열이 아닌 숫자만 남긴다.
-    nums = list(map(int, nums)) # 소수를 파악하기 위해 int로 변환
+    k_base = change_to_k_base(int(n), int(k)) # n을 k 진수로 변환
+    nums = k_base.split('0')
     for num in nums:
         if num == '': 
             continue
-        answer += isDecimal(num) # 소수 파악 후 count
+        answer += isPrime(int(num)) # 소수 파악 후 count
     
     return answer
