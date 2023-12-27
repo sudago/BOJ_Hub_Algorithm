@@ -1,2 +1,3 @@
 # BOJ_Algorithm
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+백준, 프로그래머스에서 알고리즘 문제를 풀면 자동으로 기록되는 레포지토리입니다.
+각 문제마다 풀이 과정 및 실패 이유를 주석으로 달아놓았습니다.
