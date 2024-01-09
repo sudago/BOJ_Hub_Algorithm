@@ -1,4 +1,4 @@
-# 로직을 못짰지만 그래도 딕셔너리, 투포인터 사용을 떠올렸다는걸 칭찬한다.
+# 처음에 바로 로직을 못짰지만 그래도 딕셔너리, 투포인터 사용을 떠올렸다는걸 칭찬한다.
 from collections import defaultdict
 
 def solution(gems):
