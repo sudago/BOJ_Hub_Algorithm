@@ -1,6 +1,9 @@
-croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
-word = input()
+from sys import stdin as s
 
-for i in croatia :
-    word = word.replace(i, '*')  # input 변수와 동일한 이름의 변수
+alpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+word = s.readline().rstrip()
+
+for a in alpha:
+    word = word.replace(a, 'a') # 크로아티아 문자 대체
+
 print(len(word))
